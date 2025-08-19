@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+<body class="bg-slate-100">
+
+  <div id="auth-view" class="container mx-auto max-w-md p-4 md:p-8 mt-12">
+    <div class="bg-white p-8 rounded-lg shadow-lg">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-slate-800 tracking-tight">BasicStock App</h1>
+        <p class="text-slate-500 mt-1">Gestiona tu inventario de forma sencilla.</p>
+      </div>
+
+        <form class="space-y-4">
+          <div>
+            <label for="register-username" class="block text-sm font-medium text-gray-700">Usuario</label>
+            <input type="text" id="register-username"
+              class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+          <div>
+            <label for="register-email" class="block text-sm font-medium text-gray-700">Correo</label>
+            <input type="email" id="register-email"
+              class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+          <div>
+            <label for="register-password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+            <input type="password" id="register-password"
+              class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required>
+          </div>
+          <button type="button" id="register-button"
+            class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            Registrarse
+          </button>
+          <p class="text-center text-sm text-slate-600">
+            ¿Ya tienes una cuenta? <a href="/public/login.html" class="font-medium text-sky-600 hover:text-sky-500">Inicia
+              Sesión</a>
+          </p>
+        </form>
+    </div>
+  </div>
+
+  <script src="/src/pages/register.js"></script>
+  
+</body>
+
+</html>
