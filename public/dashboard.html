@@ -12,20 +12,6 @@
 
   <app-header></app-header>
 
-
-   <!-- Encabezado -->
-  <!-- <header class="bg-blue-500 text-white p-4">
-    <div class="container mx-auto">
-      <h1 class="text-2xl font-bold">BasicStockApp</h1>
-      <nav class="mt-2">
-        <a href="/public/inventory.html" class="mr-4 text-white hover:underline">Inventario</a>
-        <a href="/public/dashboard.html" class="mr-4 text-white hover:underline">Reportes</a>
-        <button id="logoutButton" class="text-white hover:underline">Cerrar Sesión</button>
-      </nav>
-    </div>
-  </header> -->
-
-
   <!-- Contenido Principal -->
   <main class="flex-grow container mx-auto p-6">
 
@@ -54,34 +40,8 @@
     <p>&copy; 2025 BasicStockApp. SENA. Todos los derechos reservados.</p>
   </footer>
 
-   <!-- Botón de Cerrar Sesión -->
-  <!-- <script>
-    function logout() {
-      if (!confirm('¿Estás seguro de que quieres cerrar sesión?')) {
-        return;
-      }
-      localStorage.removeItem('token');
-      console.log('🔒 Sesión cerrada, token eliminado');
-      window.location.href = 'login.html'; // Ajusta según tu estructura
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const logoutButton = document.getElementById('logoutButton');
-      if (logoutButton) {
-        logoutButton.addEventListener('click', (e) => {
-          e.preventDefault();
-          logout();
-        });
-      } else {
-        console.warn('⚠️ No se encontró el botón de logout');
-      }
-    });
-  </script> -->
-
-
-  <script src="/utils/logout.js"></script>
+  <script src="/src/utils/logout.js"></script>
   <script src="/src/components/header-component.js"></script>
-
 
 </body>
 

@@ -1,3 +1,4 @@
+
 class HeaderComponent extends HTMLElement {
   constructor() {
     super();
@@ -20,7 +21,8 @@ class HeaderComponent extends HTMLElement {
             <a href="/public/dashboard.html" class="mr-4 text-white hover:underline">Dashboard</a>
             <a href="/public/inventory.html" class="mr-4 text-white hover:underline">Inventario</a>
             <a href="/public/reports.html" class="mr-4 text-white hover:underline">Reportes</a>
-            <button id="logoutButton" class="text-white hover:underline">Cerrar Sesión</button>
+            <button id="logoutButton" onclick="logout()"
+              class="text-white hover:underline">Cerrar Sesión</button>
           </nav>
         </div>
       </header>

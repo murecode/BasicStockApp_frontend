@@ -1,5 +1,5 @@
 // src/pages/create-product.js
-import { createProduct } from '../api/product-api.js';
+import { createProduct } from '../api/product.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('product-form');
